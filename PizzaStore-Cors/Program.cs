@@ -38,7 +38,7 @@ app.UseSwaggerUI(c =>
 // 3) use the capability
 app.UseCors(MyAllowSpecificOrigins);
 
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/", () => "CCHTest2 Hello World!");
 
 app.MapGet("/pizzas", async (PizzaDb db) => await db.Pizzas.ToListAsync());
 
